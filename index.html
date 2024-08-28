@@ -856,7 +856,7 @@
         }
 
         .testimonial-card:first-child .testimonial-card-prev,
-        .testimonial-card:last-child .testimonial-card-next {
+        .testimonial-card:nth-child(3) .testimonial-card-next {
             display: flex;
         }
 
@@ -870,6 +870,10 @@
             position: relative;
             display: flex;
             flex-direction: column
+        }
+
+        .testimonial-card:nth-child(n+4) {
+            display: none;
         }
 
         .testimonial-text {
