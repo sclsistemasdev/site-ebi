@@ -14,7 +14,7 @@ var content = `
                         </div>
                         <div class="nld-invite-message-container" @click="open_form()">
                             <div class="nld-invite-message-text nld-shown">
-                                <p v-if="show_message_apresentation">{{ broker.description }}</p>
+                                <p v-if="show_message_apresentation" v-html="broker.description">{{ broker.description }}</p>
                             </div>
                             <div class="nld-footer nld-time"></div>
                         </div>
@@ -2526,13 +2526,13 @@ const App = new Vue({
         id: "1",
         image: "assets/images/chatbot.jpg",
         name: "ebimob",
-        cellphone: "554733960000",
+        cellphone: "5547988238296",
         city: "",
         message:
-          "Meu nome é ebimob, quer ver uma Demostração Gratuita da sua jornada de sucesso?",
+          "Meu nome é Denis",
         options: ["Fale comigo AGORA!"],
         description:
-          "Gostaria de mais informações sobre o ebimob e agendar uma demostração gratuita.",
+          "Quer ver uma <b>Demonstração Gratuita</b> da sua jornada de sucesso?",
       };
     },
 
