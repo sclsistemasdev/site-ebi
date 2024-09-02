@@ -79,7 +79,7 @@ var content = `
                                                     </div>
                                                 </div>
                                                 <div class="nld-bubble message">
-                                                    <p>{{ broker.message }}</p>
+                                                    <p v-html="broker.message">{{ broker.message }}</p>
                                                     <div class="nld-sel nld-messages" v-if="stage_flow == 0">
                                                         <a :href="'https://api.whatsapp.com/send?phone=' + broker.cellphone + '&text=Preciso de ajuda para montar minha imobiliária de forma gratuita.'" class="nld-opt" style="text-decoration: none;">Fale comigo AGORA!</a>
                                                     </div>
@@ -2529,7 +2529,7 @@ const App = new Vue({
         cellphone: "5547988238296",
         city: "",
         message:
-          "Meu nome é Denis",
+          "Meu nome é Denis, quer ver uma <b>Demonstração Gratuita</b> da sua jornada de sucesso?",
         options: ["Fale comigo AGORA!"],
         description:
           "Quer ver uma <b>Demonstração Gratuita</b> da sua jornada de sucesso?",
