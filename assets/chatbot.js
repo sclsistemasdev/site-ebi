@@ -81,7 +81,7 @@ var content = `
                                                 <div class="nld-bubble message">
                                                     <p v-html="broker.message">{{ broker.message }}</p>
                                                     <div class="nld-sel nld-messages" v-if="stage_flow == 0">
-                                                        <a :href="'https://api.whatsapp.com/send?phone=' + broker.cellphone + '&text=Preciso de ajuda para montar minha imobiliária de forma gratuita.'" class="nld-opt" style="text-decoration: none;">Fale comigo AGORA!</a>
+                                                        <a :href="'https://api.whatsapp.com/send?phone=' + broker.cellphone + '&text=Quero agendar minha Demonstração Gratuita.'" class="nld-opt" style="text-decoration: none;">Fale comigo AGORA!</a>
                                                     </div>
                                                     <div class="nld-clear"></div>
                                                 </div>
