@@ -767,10 +767,10 @@
             height: 40px;
         }
 
-        .plan-card:first-child .plan-card-prev,
+        /* .plan-card:first-child .plan-card-prev,
         .plan-card:last-child .plan-card-next {
             display: flex;
-        }
+        } */
 
         .dots-plan-container {
             display: none;
@@ -2167,9 +2167,9 @@
                 display: none;
             }
 
-            .plan {
+           /* .plan {
                 display: none;
-            }
+            }*/
 
             .testimonial-card:first-child .testimonial-card-prev,
             .testimonial-card:last-child .testimonial-card-next,
@@ -2183,15 +2183,16 @@
                 display: flex;
             }
 
+            /* .plan.selected .plan-card-prev,
+            .plan.selected .plan-card-next, */
             .testimonial-card.selected .testimonial-card-prev,
-            .plan.selected .plan-card-prev,
-            .testimonial-card.selected .testimonial-card-next,
-            .plan.selected .plan-card-next {
+            .testimonial-card.selected .testimonial-card-next
+            {
                 display: flex;
             }
 
-            .dots-testimonial-container,
-            .dots-plan-container {
+            /* .dots-plan-container */
+            .dots-testimonial-container {
                 display: flex;
             }
 
@@ -2322,8 +2323,8 @@
                     <li><a href="#steps">Benefícios</a></li>
                     <li><a href="#plans">Preços</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a id="button-acessar-portal" href="https://beta.eubuscoimoveis.com.br/login.php"><button
-                                class="acesso-button">Acesse sua
+                    <li><a id="button-acessar-portal" target="_blank"
+                            href="https://beta.eubuscoimoveis.com.br/login.php"><button class="acesso-button">Acesse sua
                                 imobiliária
                                 digital</button></a></li>
                 </ul>
@@ -2333,7 +2334,7 @@
         <div class="mobile-menu">
             <a href="#steps">Benefícios</a><a href="#plans">Preços</a>
             <a href="#success">Depoimentos</a>
-            <a id="button-acessar-portal-mobile" href="https://beta.eubuscoimoveis.com.br/login.php">
+            <a id="button-acessar-portal-mobile" target="_blank" href="https://beta.eubuscoimoveis.com.br/login.php">
                 <button class="cta-button">Acesse sua imobiliária digital</button>
             </a>
         </div>
@@ -2343,7 +2344,8 @@
             <div class="hero-content">
                 <h1>SUA JORNADA<br> DE SUCESSO<br> COMEÇA <br>AGORA</h1>
                 <p>Tenha sua imobiliária digital<br> a partir de <b>R$49,90</b></p>
-                <a id="button-testar-gratis" href="https://www.eubuscoimoveis.com.br/seja?code=teste" target="_blank" rel="noopener noreferrer">
+                <a id="button-testar-gratis" href="https://www.eubuscoimoveis.com.br/seja?code=teste" target="_blank"
+                    rel="noopener noreferrer">
                     <div class="cta-button button-testar-gratis">
                         <b>TESTE GRÁTIS POR 7 DIAS*</b>
                         <small>NO PLANO PRO</small>
@@ -2565,27 +2567,33 @@
                             <p><label><span class="plans-icon">+</span>Elaboração do contrato</label><span><img
                                         class="plan-info-checked" src="assets/images/icones/arrow.svg"
                                         alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Portfólio de imóveis</label><span
+                                    class="check"><img class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                         </div>
                         <div class="plan-integration">
                             <h4>Integração</h4>
+                            <p><label><span class="plans-icon">+</span>Google Ads</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Google Analytics</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Pixel Facebook</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                             <p><label><span class="plans-icon">+</span>Portal Eu Busco Imóveis</label><span
                                     class="check"><img class="plan-info-checked" src="assets/images/icones/arrow.svg"
                                         alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Portfólio de imóveis</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Google Analytics</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Google Ads</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Pixel Facebook</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>RD Station</label><span class="soon">Em
-                                    breve</span></p>
-                            <p><label><span class="plans-icon">+</span>DWV</label><span class="soon">Em breve</span></p>
-                            <p><label><span class="plans-icon">+</span>Facebook Lead Ads</label><span class="soon">Em
-                                    breve</span></p>
-                            <p><label><span class="plans-icon">+</span>Portais imobiliários (OLX, Zap, etc)</label><span
-                                    class="soon">Em breve</span></p>
+                            <p><label><span class="plans-icon">+</span>OLX</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>ZAP</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Viva Real</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                         </div>
                         <div class="plan-education">
                             <h4>Educação</h4>
@@ -2713,27 +2721,33 @@
                             <p><label><span class="plans-icon">+</span>Elaboração do contrato</label><span><img
                                         class="plan-info-checked" src="assets/images/icones/arrow.svg"
                                         alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Portfólio de imóveis</label><span
+                                    class="check"><img class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                         </div>
                         <div class="plan-integration">
                             <h4>Integração</h4>
+                            <p><label><span class="plans-icon">+</span>Google Ads</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Google Analytics</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Pixel Facebook</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                             <p><label><span class="plans-icon">+</span>Portal Eu Busco Imóveis</label><span
                                     class="check"><img class="plan-info-checked" src="assets/images/icones/arrow.svg"
                                         alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Portfólio de imóveis</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Google Analytics</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Google Ads</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>Pixel Facebook</label><span class="check"><img class="plan-info-checked"
-                                        src="assets/images/icones/arrow.svg" alt="possui"></span></p>
-                            <p><label><span class="plans-icon">+</span>RD Station</label><span class="soon">Em
-                                    breve</span></p>
-                            <p><label><span class="plans-icon">+</span>DWV</label><span class="soon">Em breve</span></p>
-                            <p><label><span class="plans-icon">+</span>Facebook Lead Ads</label><span class="soon">Em
-                                    breve</span></p>
-                            <p><label><span class="plans-icon">+</span>Portais imobiliários (OLX, Zap, etc)</label><span
-                                    class="soon">Em breve</span></p>
+                            <p><label><span class="plans-icon">+</span>OLX</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>ZAP</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
+                            <p><label><span class="plans-icon">+</span>Viva Real</label><span class="check"><img
+                                        class="plan-info-checked" src="assets/images/icones/arrow.svg"
+                                        alt="possui"></span></p>
                         </div>
                         <div class="plan-education">
                             <h4>Educação</h4>
@@ -2761,8 +2775,8 @@
                 <div class="dot-plan"></div>
             </div>
             <div style="margin-top:40px">
-                <a id="button-testar-gratis-2" class="button-testar-gratis-link" href="https://www.eubuscoimoveis.com.br/seja?code=teste"
-                    target="_blank" rel="noopener noreferrer">
+                <a id="button-testar-gratis-2" class="button-testar-gratis-link"
+                    href="https://www.eubuscoimoveis.com.br/seja?code=teste" target="_blank" rel="noopener noreferrer">
                     <div class="cta-button button-testar-gratis button-testar-gratis-2">
                         <b>TESTE GRÁTIS POR 7 DIAS*</b>
                         <small>NO PLANO PRO</small>
@@ -2798,24 +2812,6 @@
         <div>
             <div class="testimonials-container">
                 <div class="testimonial-card selected">
-                    <div class="testimonial-card-prev">
-                        <div class="arrow-card"></div>
-                    </div>
-                    <p class="testimonial-text">A ebimob se resume em liberdade para mim, eu posso trabalhar conforme a
-                        minha agenda, eu faço o meu horário, não preciso estar apegada a cumprir horários e plantões.
-                        Posso atender meu cliente sentada na sala da minha casa, o que é muito importante e cômodo no
-                        meu dia a dia, temos acesso total ao sistema o que facilita nosso atendimento ao cliente.</p>
-                    <div class="testimonial-author"><img src="assets/images/Foto.png" alt="Carine Botene">
-                        <div class="author-info">
-                            <p class="author-name">Carine Botene</p>
-                            <p class="author-title">Corretora de Imóveis<br>CRECI 29047F</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-card-next">
-                        <div class="arrow-card"></div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
                     <div class="testimonial-card-prev">
                         <div class="arrow-card"></div>
                     </div>
@@ -2872,7 +2868,6 @@
             </div>
             <div class="dots-testimonial-container">
                 <div class="dot-testimonial selected"></div>
-                <div class="dot-testimonial"></div>
                 <div class="dot-testimonial"></div>
                 <div class="dot-testimonial"></div>
             </div>
@@ -2939,8 +2934,8 @@
                 </div>
             </div>
             <div class="faq-item-button-free">
-                <a id="button-testar-gratis-4" class="button-testar-gratis-link" href="https://www.eubuscoimoveis.com.br/seja?code=teste"
-                    target="_blank" rel="noopener noreferrer">
+                <a id="button-testar-gratis-4" class="button-testar-gratis-link"
+                    href="https://www.eubuscoimoveis.com.br/seja?code=teste" target="_blank" rel="noopener noreferrer">
                     <div class="cta-button button-testar-gratis">
                         <b>TESTE GRÁTIS POR 7 DIAS*</b>
                         <small>NO PLANO PRO</small>
